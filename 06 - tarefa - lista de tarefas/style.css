@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #78a6b6;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column; /* Alteração para coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+.container{
+    display: flex;
+    
+}
+input{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+}
+button {
+    margin-left: 10px;
+    height: 40px;
+    font-size: 18px;
+    display: inline-block;
+}
+#lista-tarefas {
+    font-size: 25px;
+}
+.riscado {
+    text-decoration: line-through;
+}
