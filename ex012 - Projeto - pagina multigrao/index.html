@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title" style="font-size: 60px;">MultiGrãos</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-restaurante" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a Loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-star-fill me-1"></i>
+                            Destaques
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-fire me-1"></i>
+                            Nossas Lojas
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/slides/slide1.1.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide2.1.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide3.1.jpg" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button"  class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img id="imagem" src="images/grao.png" class="d-block w-100 rounded md-2" alt="Foto do espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a Loja</span></h2>
+                            <p>
+Bem-vindo à Multigrãos, o seu destino para produtos naturais de alta qualidade! Nossa loja é especializada em especiarias, grãos e produtos alimentícios que promovem saúde e bem-estar. Na Multigrãos, valorizamos a diversidade e a origem dos nossos produtos, trazendo para você uma seleção cuidadosa de ingredientes frescos e saborosos.
+
+Nosso compromisso é fornecer opções nutritivas e saborosas para o seu dia a dia, priorizando sempre a qualidade e a procedência dos nossos produtos. Se você está em busca de uma alimentação saudável, saborosa e consciente, está no lugar certo. A equipe da Multigrãos está aqui para ajudar você a descobrir novos sabores e a incorporar o melhor da natureza na sua rotina.
+
+Explore nossa loja e descubra como podemos tornar suas refeições mais nutritivas e deliciosas!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Destaques: <span class="text-colored">Mais Pedidos</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/destaques/arroz.jpg" alt="" class="d-block w-100 rounded md-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-circle-fill"></i>
+                            Arroz
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti fugiat expedita earum, illo quo delectus error accusamus autem quam sint possimus et ratione labore. Quaerat ipsa amet dolorem. Blanditiis, fugit.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/destaques/cafe.jpg" alt="" class="d-block w-100 rounded">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-circle-fill"></i>
+                            Grãos de Café
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti fugiat expedita earum, illo quo delectus error accusamus autem quam sint possimus et ratione labore. Quaerat ipsa amet dolorem. Blanditiis, fugit.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/destaques/urucum.jpg" alt="" class="d-block w-100 rounded md-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-circle-fill"></i>
+                            Urucum
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti fugiat expedita earum, illo quo delectus error accusamus autem quam sint possimus et ratione labore. Quaerat ipsa amet dolorem. Blanditiis, fugit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nossas <span class="text-colored">Lojas</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button data-bs-toggle="tab" data-bs-target="#Loja1" type="button" class=" fw-bold text-start nav-link text-colored active">Sede</button>
+                            <button data-bs-toggle="tab" data-bs-target="#loja2" type="button" class=" fw-bold text-start nav-link text-colored">Unidade 1</button>
+                            <button data-bs-toggle="tab" data-bs-target="#loja3" type="button" class=" fw-bold text-start nav-link text-colored">Unidade 2</button>
+
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+
+                            <div class="tab-pane active" id="Loja1">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/Lojas/sede.jpg" alt="coca-cola">
+                                        <h5 class="text-colored fw-bold mt-2">Sede</h5>
+                                        <p>
+                                            Endereço: Rua dos Grãos, 123
+                                            Bairro: Centro
+                                            Cidade: São Paulo
+                                            Estado: SP
+                                            CEP: 01000-000 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="loja2">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/Lojas/loja2.jpeg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Centro do Rio</h5>
+                                        <p>
+                                            Endereço: Avenida das Especiarias, 456
+                                            Bairro: Jardins
+                                            Cidade: Rio de Janeiro
+                                            Estado: RJ
+                                            CEP: 22000-000
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="loja3">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/Lojas/loja3.png" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Minas Gerais</h5>
+                                        <p>
+                                            Endereço: Rua das Verduras, 789
+                                            Bairro: Vila Nova
+                                            Cidade: Belo Horizonte
+                                            Estado: MG
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">Conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu Nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label  for="email" class="form-label fw-bold text-colored">E-Mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label  for="telefone" class="form-label fw-bold text-colored" >Seu Telefone (Opcional)</label>
+                                <input type="tel" id="telefone" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxx">
+                            </div>
+                            <div class="mb-3">
+                                <label  for="mensagem" class="form-label fw-bold text-colored">Sua Mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored"> <i class="bi bi-hand-thumbs-up-fill"></i> Redes Sociais</h3>
+                        <ul class="social-links">
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-facebook text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5 ms-1 me-1">
+                                <a href="#">
+                                    <i class="bi bi-instagram text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-whatsapp text-colored"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored"> <i class="bi bi-cursor-fill"></i> Endereço</h3>
+                            <p>
+                                Rua teste Exemplo n° 145, Bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="hope">
+        <p>
+        Criado por <a href="https://github.com/thejorgeluiz" target="_blank">Jorge Luiz</a> para EBAC
+        </p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#telefone').mask('(00) 00000-0000');
+
+});
+
+    </script>
+</body>
+</html>
